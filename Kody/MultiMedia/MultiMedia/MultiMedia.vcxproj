@@ -47,6 +47,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\opencv_2.4.10.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -75,12 +76,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classifier.h" />
+    <ClInclude Include="ColorImageProcessor.h" />
     <ClInclude Include="DataConsumer.h" />
     <ClInclude Include="DataProcessor.h" />
     <ClInclude Include="DataProducer.h" />
     <ClInclude Include="Effector.h" />
     <ClInclude Include="FeatureExtractor.h" />
     <ClInclude Include="FeatureVector.h" />
+    <ClInclude Include="ImageViewer.h" />
     <ClInclude Include="MockClassifier.h" />
     <ClInclude Include="MockDataConsumer.h" />
     <ClInclude Include="MockDataProcessor.h" />
@@ -92,18 +95,23 @@
     <ClInclude Include="MockRawData.h" />
     <ClInclude Include="MockResult.h" />
     <ClInclude Include="MultiMediaSystem.h" />
+    <ClInclude Include="OCVCamera.h" />
     <ClInclude Include="ProcessedData.h" />
+    <ClInclude Include="ProcessedImage.h" />
     <ClInclude Include="RawData.h" />
+    <ClInclude Include="RawImage.h" />
     <ClInclude Include="Result.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Classifier.cpp" />
+    <ClCompile Include="ColorImageProcessor.cpp" />
     <ClCompile Include="DataConsumer.cpp" />
     <ClCompile Include="DataProcessor.cpp" />
     <ClCompile Include="DataProducer.cpp" />
     <ClCompile Include="Effector.cpp" />
     <ClCompile Include="FeatureExtractor.cpp" />
     <ClCompile Include="FeatureVector.cpp" />
+    <ClCompile Include="ImageViewer.cpp" />
     <ClCompile Include="MockClassifier.cpp" />
     <ClCompile Include="MockDataConsumer.cpp" />
     <ClCompile Include="MockDataProcessor.cpp" />
@@ -115,8 +123,11 @@
     <ClCompile Include="MockRawData.cpp" />
     <ClCompile Include="MockResult.cpp" />
     <ClCompile Include="MultiMediaSystem.cpp" />
+    <ClCompile Include="OCVCamera.cpp" />
     <ClCompile Include="ProcessedData.cpp" />
+    <ClCompile Include="ProcessedImage.cpp" />
     <ClCompile Include="RawData.cpp" />
+    <ClCompile Include="RawImage.cpp" />
     <ClCompile Include="Result.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

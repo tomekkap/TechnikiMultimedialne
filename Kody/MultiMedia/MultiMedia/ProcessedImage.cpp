@@ -1,0 +1,2 @@
+#include "ProcessedImage.h"
+
