@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="4c18e54d-76a3-42fe-9bfa-570116f42d41" name="MultiMedia" linkedPackageId="ca11a8bc-9aec-4ba9-8ecd-763fcc29df25" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="33ec257d-b2ec-49bf-8678-d90a9e577420" name="RawData" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f6d17b54-e9ac-407d-b7d9-d5e5f28089c6" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8de3d0cd-1a76-40fc-aa5b-ee34c5a12d40" name="ProcessedData" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="50e37bbe-459a-488f-8874-bc9206de8359" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="da283d61-688e-4cbf-b3d2-f604d45aa6d5" name="FeatureVector" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="eaf68757-a9ed-4db4-bf8a-0f53202d3130" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="353f4bce-bd00-4b90-b09e-7025696bc860" name="Result" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="876dc14b-c241-4f05-a0e7-2722478e852a" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4cf466a2-3d53-4578-b306-35e9cb3ed06b" name="DataProducer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="575a6f54-0955-4b57-8dd1-b8846647a5bf" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a55166c9-5aac-485f-91ab-e33424aa2e15" name="DataProcessor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f425fda9-9f73-493e-a1dd-a88920d0c2c4" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a3f1c3c2-2b12-4168-94ab-c1656a0278fd" name="DataConsumer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="344e1126-249b-41d7-bfec-4951c979a828" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="412cedac-0723-4753-bc43-bcc0355c30e6" name="FeatureExtractor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0e72a7e5-7902-4994-b91b-6f2de8e2b0b1" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5ba60c85-e2b1-4aaf-b238-99011b8a6e35" name="Classifier" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="62a994b7-28c7-4f23-bbc7-d483e17567bc" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6615e0cf-de86-424a-bb27-d22ce6bc17a0" name="Effector" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="73b87804-cf17-4675-b255-6782f92ca4ab" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="aa262bb5-1d48-47f7-b0a6-ca8e70b1b2de" name="MultiMediaSystem" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="82457203-7218-4e43-8f4a-45753840a47a" />
+        <targetEnds>
+          <association Id="292e3093-6eab-4f38-85c9-2bd4425f9f7f" isDerived="false" sourceEndRoleName="MultiMediaSystem" targetEndRoleName="DataProducer" isLeaf="false" isAbstract="false">
+            <classMoniker Id="4cf466a2-3d53-4578-b306-35e9cb3ed06b" LastKnownName="DataProducer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a5758e40-6b92-4ea7-a95f-35d5a23fb46c" name="MultiMediaSystem" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="59e522a5-59b1-46b7-a038-3e123352c687" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1d6930a7-c2ed-4553-88b3-e8639c55d4b6" name="DataProducer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="a4ac061b-b3f5-49a6-8248-103f48c0fbcb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="58b20a55-de5e-42b4-bfc8-b327eae7b73b" />
+          </association>
+          <association Id="58ec1c8e-050d-41cb-9d9a-ec8496d6f67d" isDerived="false" sourceEndRoleName="MultiMediaSystem" targetEndRoleName="DataProcessor" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a55166c9-5aac-485f-91ab-e33424aa2e15" LastKnownName="DataProcessor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="29bf5ac4-20c8-4451-b50a-659468edc0f9" name="MultiMediaSystem" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2835fe24-77a5-48e7-9cde-65b5f075527f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a5b946b4-b1e7-4eb0-8e55-cf9c2badf97b" name="DataProcessor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="36e572c2-ed1c-47b3-b2b2-566d4bb80a03" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="01711849-57f9-4b3b-8f6c-62fe81411af6" />
+          </association>
+          <association Id="79b55804-3af4-4d4a-a7ba-386d73b7caf9" isDerived="false" sourceEndRoleName="MultiMediaSystem" targetEndRoleName="DataConsumer" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a3f1c3c2-2b12-4168-94ab-c1656a0278fd" LastKnownName="DataConsumer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4f7b13ba-02f7-46cd-9ba6-89514fa1dc6f" name="MultiMediaSystem" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cf697141-38f7-4278-9f42-e2f3325bea40" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9bc21b14-4d77-41bc-9ec5-1a7222f1ee2d" name="DataConsumer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="bf3f1d0f-2a84-4d9d-897c-c9245bb671af" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2581f68b-71de-472c-8b37-9596fa53d6bc" />
+          </association>
+          <association Id="f7bda99e-c4bc-4be9-ba6c-726b6787a36d" isDerived="false" sourceEndRoleName="MultiMediaSystem" targetEndRoleName="FeatureExtractor" isLeaf="false" isAbstract="false">
+            <classMoniker Id="412cedac-0723-4753-bc43-bcc0355c30e6" LastKnownName="FeatureExtractor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="388468ba-b857-4a18-9f1f-5ef21f8bfa46" name="MultiMediaSystem" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9e4efb73-beb2-4f38-bc88-1d07606febf7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9d044417-9016-4aed-8c14-b3c1b2eb1eec" name="FeatureExtractor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="3ef753ab-adb5-4530-9215-a2741ee11e41" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="44cbef8a-e880-45c5-875b-4e15815a9086" />
+          </association>
+          <association Id="eb42395b-d16e-4c84-ae20-6cd6f26e6e4c" isDerived="false" sourceEndRoleName="MultiMediaSystem" targetEndRoleName="Classifier" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5ba60c85-e2b1-4aaf-b238-99011b8a6e35" LastKnownName="Classifier" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0f5ae99a-0982-417f-883d-914e39258351" name="MultiMediaSystem" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f0e0ed69-990f-4142-81c8-a5b8a4d503df" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1618bc43-c765-4431-a353-bbbcf31b6e61" name="Classifier" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="6acb0538-bafd-4379-ba31-b8f8035de37d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2e814e24-7173-46ff-9907-1dc601034882" />
+          </association>
+          <association Id="c2b574e3-4227-41b7-afb1-9649c5aee8d8" isDerived="false" sourceEndRoleName="MultiMediaSystem" targetEndRoleName="Effector" isLeaf="false" isAbstract="false">
+            <classMoniker Id="6615e0cf-de86-424a-bb27-d22ce6bc17a0" LastKnownName="Effector" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="acb7d5f0-b95e-42b3-a29b-0a3880c673e6" name="MultiMediaSystem" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ade7b647-4c78-4ae2-8d98-f6e15d3e96dc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="31cbca7a-2c86-459b-a4ca-91fb923befeb" name="Effector" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="91f8bd2e-a76d-4949-adc5-1147f86dce11" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8e6de37b-a4c0-4fa9-93d1-2edd42ee4132" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="988f6f20-dea6-40e0-8d51-9f91cd2569b1" name="MockRawData" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0214e908-b253-4b72-bb9c-25fc727dcf87" />
+        <generalsInternal>
+          <generalization Id="5abe4d2b-a32a-400f-a1b9-16e6072613f0" isSubstitutable="false">
+            <classMoniker Id="33ec257d-b2ec-49bf-8678-d90a9e577420" LastKnownName="RawData" />
+            <elementDefinition Id="42a4805c-dfdd-4f2b-91af-63bc29de87e1" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5464c891-4f51-4957-8b9d-c3998d63fc6b" name="MockProcessedData" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8c459125-f3c4-4bcb-acfd-063e36e102be" />
+        <generalsInternal>
+          <generalization Id="24c011d1-73dd-45b1-98dc-77074eecc2a2" isSubstitutable="false">
+            <classMoniker Id="8de3d0cd-1a76-40fc-aa5b-ee34c5a12d40" LastKnownName="ProcessedData" />
+            <elementDefinition Id="636358cf-d64f-46e0-9ead-de92d1c68a74" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1115f627-ea3f-4c3a-a446-879f57f6e586" name="MockFeatureVector" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c01cc4b7-d6a7-4bad-b2f8-59c3769ea5b1" />
+        <generalsInternal>
+          <generalization Id="c2fed54b-8846-44da-bc21-86f23f3bd2f9" isSubstitutable="false">
+            <classMoniker Id="da283d61-688e-4cbf-b3d2-f604d45aa6d5" LastKnownName="FeatureVector" />
+            <elementDefinition Id="59f1ddc6-a160-40ac-8ef0-840a987268a3" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8560fca9-4573-4ea1-8c28-5657f067729c" name="MockResult" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="90916bdb-6d72-4e9c-b443-75898a0d9f70" />
+        <generalsInternal>
+          <generalization Id="8cb8da53-acff-438a-bd39-02d521e3f720" isSubstitutable="false">
+            <classMoniker Id="353f4bce-bd00-4b90-b09e-7025696bc860" LastKnownName="Result" />
+            <elementDefinition Id="8a2893b4-1bb0-459c-8a59-6644bb4a9408" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="caf8895e-3f4c-4395-bc51-4b25380066f3" name="MockDataProducer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9f2859a6-23d8-4abf-97c0-53fe8c2484bb" />
+        <generalsInternal>
+          <generalization Id="0d81d280-b286-4232-b522-12aea4284b71" isSubstitutable="false">
+            <classMoniker Id="4cf466a2-3d53-4578-b306-35e9cb3ed06b" LastKnownName="DataProducer" />
+            <elementDefinition Id="e31be1f8-ed67-4cfd-91e3-95eab6acfbc0" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ef24ee32-c5dd-4cc5-96c8-6c5b755c876c" name="MockDataProcessor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7f8af9a6-2fe1-46c4-856a-f5f64821fc8c" />
+        <generalsInternal>
+          <generalization Id="d81645d6-ed33-4a1c-b124-b80612574d2d" isSubstitutable="false">
+            <classMoniker Id="a55166c9-5aac-485f-91ab-e33424aa2e15" LastKnownName="DataProcessor" />
+            <elementDefinition Id="bb4d5d26-42cd-4934-861f-03b541434058" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ff572222-877d-4d41-a963-32e8f7555d58" name="MockDataConsumer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="93c27deb-4059-4e57-aebb-48f0ae3593f0" />
+        <generalsInternal>
+          <generalization Id="a2d3f01f-dc84-49e7-8a38-644344e026d0" isSubstitutable="false">
+            <classMoniker Id="a3f1c3c2-2b12-4168-94ab-c1656a0278fd" LastKnownName="DataConsumer" />
+            <elementDefinition Id="39968ce7-a3b9-454c-9f54-9c1beed80a94" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5abaab43-10af-4608-8462-850e62735ddf" name="MockFeatureExtractor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0a36a672-14ef-4958-8da9-541889539543" />
+        <generalsInternal>
+          <generalization Id="9596bea8-967c-4623-8478-e1221bbe898a" isSubstitutable="false">
+            <classMoniker Id="412cedac-0723-4753-bc43-bcc0355c30e6" LastKnownName="FeatureExtractor" />
+            <elementDefinition Id="724c3b6f-ac1b-4754-bde7-0e6d342df872" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8f719311-2259-454c-a101-e54c6e547fea" name="MockClassifier" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ccf5713e-362e-4b49-9f7a-1cbd1813a5cd" />
+        <generalsInternal>
+          <generalization Id="a52463b1-509f-406b-9215-a3ae359f34db" isSubstitutable="false">
+            <classMoniker Id="5ba60c85-e2b1-4aaf-b238-99011b8a6e35" LastKnownName="Classifier" />
+            <elementDefinition Id="f5b38357-9df5-4399-a454-dd8de154e343" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="20dcf46f-fd88-4ec3-8681-05f9b7465695" name="MockEffector" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e685ba76-e2b1-4654-be19-325a32a25796" />
+        <generalsInternal>
+          <generalization Id="1eb652e5-d6db-43fb-b3c2-572825d133d9" isSubstitutable="false">
+            <classMoniker Id="6615e0cf-de86-424a-bb27-d22ce6bc17a0" LastKnownName="Effector" />
+            <elementDefinition Id="74fa32da-5a0a-484d-8ec5-b0e364a408c4" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="ca11a8bc-9aec-4ba9-8ecd-763fcc29df25" name="MultiMediaModel">
+    <elementDefinition Id="7f64d3f6-52b3-49fc-b86d-88e226666bbe" />
+    <profileInstances>
+      <packageHasProfileInstances Id="ccaf9f6a-db19-4542-b4fb-fd0bc1ccd26e">
+        <profileInstance Id="275622c4-6857-4663-9884-bfe6a27384f4" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2260d132-bdcb-454e-ae95-99471c5b6997">
+        <profileInstance Id="29c38ed7-4444-4965-a4d8-0d7cb9bb2240" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

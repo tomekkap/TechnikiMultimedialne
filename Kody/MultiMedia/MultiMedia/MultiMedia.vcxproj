@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{50C06243-0E71-4852-996E-82D33B0EF349}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MultiMedia</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Classifier.h" />
+    <ClInclude Include="DataConsumer.h" />
+    <ClInclude Include="DataProcessor.h" />
+    <ClInclude Include="DataProducer.h" />
+    <ClInclude Include="Effector.h" />
+    <ClInclude Include="FeatureExtractor.h" />
+    <ClInclude Include="FeatureVector.h" />
+    <ClInclude Include="MockClassifier.h" />
+    <ClInclude Include="MockDataConsumer.h" />
+    <ClInclude Include="MockDataProcessor.h" />
+    <ClInclude Include="MockDataProducer.h" />
+    <ClInclude Include="MockEffector.h" />
+    <ClInclude Include="MockFeatureExtractor.h" />
+    <ClInclude Include="MockFeatureVector.h" />
+    <ClInclude Include="MockProcessedData.h" />
+    <ClInclude Include="MockRawData.h" />
+    <ClInclude Include="MockResult.h" />
+    <ClInclude Include="MultiMediaSystem.h" />
+    <ClInclude Include="ProcessedData.h" />
+    <ClInclude Include="RawData.h" />
+    <ClInclude Include="Result.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Classifier.cpp" />
+    <ClCompile Include="DataConsumer.cpp" />
+    <ClCompile Include="DataProcessor.cpp" />
+    <ClCompile Include="DataProducer.cpp" />
+    <ClCompile Include="Effector.cpp" />
+    <ClCompile Include="FeatureExtractor.cpp" />
+    <ClCompile Include="FeatureVector.cpp" />
+    <ClCompile Include="MockClassifier.cpp" />
+    <ClCompile Include="MockDataConsumer.cpp" />
+    <ClCompile Include="MockDataProcessor.cpp" />
+    <ClCompile Include="MockDataProducer.cpp" />
+    <ClCompile Include="MockEffector.cpp" />
+    <ClCompile Include="MockFeatureExtractor.cpp" />
+    <ClCompile Include="MockFeatureVector.cpp" />
+    <ClCompile Include="MockProcessedData.cpp" />
+    <ClCompile Include="MockRawData.cpp" />
+    <ClCompile Include="MockResult.cpp" />
+    <ClCompile Include="MultiMediaSystem.cpp" />
+    <ClCompile Include="ProcessedData.cpp" />
+    <ClCompile Include="RawData.cpp" />
+    <ClCompile Include="Result.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
