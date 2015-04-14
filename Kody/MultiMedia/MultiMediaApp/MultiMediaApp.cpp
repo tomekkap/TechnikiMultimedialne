@@ -19,7 +19,7 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	MultiMediaSystem* multiMediaSystem = new MultiMediaSystem(new OCVCamera(), new ColorImageProcessor(), 
+	MultiMediaSystem* multiMediaSystem = new MultiMediaSystem(new OCVCamera(0), new ColorImageProcessor(), 
 		new ImageViewer(), new MockFeatureExtractor(), new MockClassifier(), new MockEffector());
 	multiMediaSystem->init();
 	multiMediaSystem->run();

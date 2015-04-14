@@ -1,8 +1,13 @@
 #include "OCVCamera.h"
 
+OCVCamera::OCVCamera(int cameraIndex)
+{
+	this->cameraIndex = cameraIndex;
+}
+
 void OCVCamera::init()
 {
-	camera = new VideoCapture(0);
+	camera = new VideoCapture(cameraIndex);
 	rawImage = new RawImage();
 }
 

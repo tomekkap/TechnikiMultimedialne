@@ -11,5 +11,11 @@ public:
 	virtual ProcessedData* processData(RawData* rawData);
 private:
 	ProcessedImage* processedImage;
+	int HMin;
+	int HMax;
+	int SMin;
+	int SMax;
+	int VMin;
+	int VMax;
 };
 

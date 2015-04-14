@@ -10,6 +10,7 @@ using namespace cv;
 class OCVCamera: public DataProducer
 {
 public:
+	OCVCamera(int cameraIndex);
 	virtual void init();
 	virtual void done();
 	virtual RawData* getData();
@@ -17,5 +18,6 @@ public:
 private:
 	VideoCapture* camera;
 	RawImage* rawImage;
+	int cameraIndex;
 };
 
