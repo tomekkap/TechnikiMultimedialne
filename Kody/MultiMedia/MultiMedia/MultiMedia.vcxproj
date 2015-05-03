@@ -77,12 +77,16 @@
   <ItemGroup>
     <ClInclude Include="Classifier.h" />
     <ClInclude Include="ColorImageProcessor.h" />
+    <ClInclude Include="CompressedData.h" />
+    <ClInclude Include="CompressedDataRead.h" />
     <ClInclude Include="DataConsumer.h" />
     <ClInclude Include="DataProcessor.h" />
     <ClInclude Include="DataProducer.h" />
     <ClInclude Include="Effector.h" />
     <ClInclude Include="FeatureExtractor.h" />
     <ClInclude Include="FeatureVector.h" />
+    <ClInclude Include="ImageCompressor.h" />
+    <ClInclude Include="ImageDecompressor.h" />
     <ClInclude Include="ImageViewer.h" />
     <ClInclude Include="MockClassifier.h" />
     <ClInclude Include="MockDataConsumer.h" />
@@ -95,6 +99,8 @@
     <ClInclude Include="MockRawData.h" />
     <ClInclude Include="MockResult.h" />
     <ClInclude Include="MultiMediaSystem.h" />
+    <ClInclude Include="NetDataReceiver.h" />
+    <ClInclude Include="NetDataSender.h" />
     <ClInclude Include="OCVCamera.h" />
     <ClInclude Include="ProcessedData.h" />
     <ClInclude Include="ProcessedImage.h" />
@@ -105,12 +111,16 @@
   <ItemGroup>
     <ClCompile Include="Classifier.cpp" />
     <ClCompile Include="ColorImageProcessor.cpp" />
+    <ClCompile Include="CompressedData.cpp" />
+    <ClCompile Include="CompressedDataRead.cpp" />
     <ClCompile Include="DataConsumer.cpp" />
     <ClCompile Include="DataProcessor.cpp" />
     <ClCompile Include="DataProducer.cpp" />
     <ClCompile Include="Effector.cpp" />
     <ClCompile Include="FeatureExtractor.cpp" />
     <ClCompile Include="FeatureVector.cpp" />
+    <ClCompile Include="ImageCompressor.cpp" />
+    <ClCompile Include="ImageDecompressor.cpp" />
     <ClCompile Include="ImageViewer.cpp" />
     <ClCompile Include="MockClassifier.cpp" />
     <ClCompile Include="MockDataConsumer.cpp" />
@@ -123,6 +133,8 @@
     <ClCompile Include="MockRawData.cpp" />
     <ClCompile Include="MockResult.cpp" />
     <ClCompile Include="MultiMediaSystem.cpp" />
+    <ClCompile Include="NetDataReceiver.cpp" />
+    <ClCompile Include="NetDataSender.cpp" />
     <ClCompile Include="OCVCamera.cpp" />
     <ClCompile Include="ProcessedData.cpp" />
     <ClCompile Include="ProcessedImage.cpp" />
