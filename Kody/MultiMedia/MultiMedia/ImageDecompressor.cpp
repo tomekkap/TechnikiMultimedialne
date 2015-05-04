@@ -1,21 +1,26 @@
 #include <exception>
 
 #include "ImageDecompressor.h"
+#include "CompressedDataRead.h"
 
 using namespace std;
 
 void ImageDecompressor::init()
 {
-	throw new exception("Not implemented.");
+	processedImage = new ProcessedImage();
+	if(!processedImage)
+		throw new exception("Cannot allocate memory for the processed image.");
 }
 
 void ImageDecompressor::done()
 {
-	throw new exception("Not implemented.");
+	if(processedImage)
+		delete processedImage;
 }
 
 ProcessedData* ImageDecompressor::processData(RawData* rawData)
 {
-	throw new exception("Not implemented.");
-	return NULL;
+	processedImage->image.create(480, 640, CV_8UC3);
+	memcpy(processedImage->image.data, ((CompressedDataRead*)rawData)->buffer, ((CompressedDataRead*)rawData)->length);
+	return (ProcessedData*)processedImage;
 }

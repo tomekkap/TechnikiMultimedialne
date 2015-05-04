@@ -20,6 +20,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VideoReceiver", "VideoRecei
 		{50C06243-0E71-4852-996E-82D33B0EF349} = {50C06243-0E71-4852-996E-82D33B0EF349}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiMediaTests", "MultiMediaTests\MultiMediaTests.vcxproj", "{B8754C07-118E-4457-B983-DD46793C1EE4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{50C06243-0E71-4852-996E-82D33B0EF349} = {50C06243-0E71-4852-996E-82D33B0EF349}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +85,16 @@ Global
 		{8919DEF4-F949-4886-9AD7-3F30B0D68A03}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{8919DEF4-F949-4886-9AD7-3F30B0D68A03}.Release|Win32.ActiveCfg = Release|Win32
 		{8919DEF4-F949-4886-9AD7-3F30B0D68A03}.Release|Win32.Build.0 = Release|Win32
+		{B8754C07-118E-4457-B983-DD46793C1EE4}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{B8754C07-118E-4457-B983-DD46793C1EE4}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{B8754C07-118E-4457-B983-DD46793C1EE4}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{B8754C07-118E-4457-B983-DD46793C1EE4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B8754C07-118E-4457-B983-DD46793C1EE4}.Debug|Win32.Build.0 = Debug|Win32
+		{B8754C07-118E-4457-B983-DD46793C1EE4}.Release|Any CPU.ActiveCfg = Release|Win32
+		{B8754C07-118E-4457-B983-DD46793C1EE4}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{B8754C07-118E-4457-B983-DD46793C1EE4}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{B8754C07-118E-4457-B983-DD46793C1EE4}.Release|Win32.ActiveCfg = Release|Win32
+		{B8754C07-118E-4457-B983-DD46793C1EE4}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,5 +5,7 @@
 class CompressedData: public ProcessedData
 {
 public:
+	int length;
+	unsigned char* buffer;
 };
 
