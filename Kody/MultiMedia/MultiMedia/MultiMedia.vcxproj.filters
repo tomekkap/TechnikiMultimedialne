@@ -114,6 +114,9 @@
     <ClInclude Include="ImageDecompressor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SmallWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="RawData.cpp">
@@ -210,6 +213,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ImageDecompressor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SmallWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

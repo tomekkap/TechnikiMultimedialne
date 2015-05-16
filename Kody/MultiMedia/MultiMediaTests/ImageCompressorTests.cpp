@@ -97,7 +97,7 @@ void ImageCompressorTests::processDataTest()
 
 	_ASSERT(compressedData->buffer[0] == 9);
 	_ASSERT(compressedData->buffer[1] == 3);
-	_ASSERT(compressedData->buffer[2] == 4);
+	_ASSERT(compressedData->buffer[2] == 2);
 	_ASSERT(compressedData->buffer[3] == 139);
 
 	_ASSERT(compressedData->buffer[4] == 44);

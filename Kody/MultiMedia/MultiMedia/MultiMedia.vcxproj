@@ -110,6 +110,7 @@
     <ClInclude Include="RawData.h" />
     <ClInclude Include="RawImage.h" />
     <ClInclude Include="Result.h" />
+    <ClInclude Include="SmallWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Classifier.cpp" />
@@ -144,6 +145,7 @@
     <ClCompile Include="RawData.cpp" />
     <ClCompile Include="RawImage.cpp" />
     <ClCompile Include="Result.cpp" />
+    <ClCompile Include="SmallWindow.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
